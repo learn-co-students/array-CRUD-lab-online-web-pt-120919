@@ -1,51 +1,37 @@
-empty_array = []
+def create_an_empty_array
+  []
+end
 
-array = ["One", "Two", "Three"]
+def create_an_array
+  ["dog", "cat", "fish", "owl"]
+end
 
-array << "Four"
+def add_element_to_end_of_array(array, element)
+array << element
+end
 
-array.push("Five")
+def add_element_to_start_of_array(array, element)
+array.unshift(element)
+end
 
-array.unshift("Six")
-
+def remove_element_from_end_of_array(array)
 array.pop
+end
 
+
+def remove_element_from_start_of_array(array)
 array.shift
-array[2]
-array.index(2)
+end
 
-# def create_an_empty_array
-#
-# end
-#
-# def create_an_array
-#
-# end
-#
-# def add_element_to_end_of_array(array, element)
-#
-# end
-#
-# def add_element_to_start_of_array(array, element)
-#
-# end
-#
-# def remove_element_from_end_of_array(array)
-#
-# end
-#
-# def remove_element_from_start_of_array(array)
-#
-# end
-#
-# def retrieve_element_from_index(array, index_number)
-#
-# end
-#
-# def retrieve_first_element_from_array(array)
-#
-# end
-#
-# def retrieve_last_element_from_array(array)
-#
-# end
+def retreive_element_from_index(array, index_number)
+array[-1]
+end
+
+def retreive_first_element_from_array(array, index_number)
+
+end
+
+def retreive_last_element_from_array(array)
+  x = array.count
+  array[x-1]
+end
